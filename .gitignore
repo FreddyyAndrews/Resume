@@ -1,0 +1,11 @@
+# Ignore all files
+*
+
+# Allow .tex files
+!*.tex
+
+# Allow the .gitignore file itself
+!.gitignore
+
+# Optional: Allow specific directories if needed
+!dir_name/
