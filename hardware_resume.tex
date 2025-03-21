@@ -127,7 +127,7 @@
 \newcommand{\course}{Computer Engineering} % Your Program
 \newcommand{\roll}{xxxxxxx} % Your Roll No.
 \newcommand{\phone}{873-353-3056} % Your Phone Number
-\newcommand{\emaila}{freddywandrews@gmail.com} %Email 1
+\newcommand{\emaila}{Freddywandrews@gmail.com} %Email 1
 
 \begin{document}
 \fontfamily{cmr}\selectfont
@@ -153,18 +153,18 @@
 \section{\textbf{Education}}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {B.A.Sc. Computer Engineering}{GPA: 3.93}
+      {B.A.Sc. Computer Engineering}{GPA: 9.22/10}
       {University of Ottawa, Ottawa Ontario, Canada}{September 2021- December 2025}
       \resumeItemListStart
       \vspace{1.0mm}
+      \resumeItem{Hardware Coursework:}
+          {Electronics, \textbf{VHDL} for Digital Logic Design, \textbf{MATLAB} for Signal Analysis, \textbf{FPGA}, \textbf{ARM Microcontroller} Assembly, Circuit Theory, \textbf{Quartus Prime}}
+          \vspace{1.0mm}
         \resumeItem{Software Coursework:}
           {Operating Systems, \textbf{Data Structures and Algorithms}, \textbf{OOP} in \textbf{Python} and \textbf{Java}, Advanced Programming Concepts in \textbf{C++}.}
           \vspace{1.0mm}
-          \resumeItem{Hardware Coursework:}
-          {ARM Microcontroller Assembly, \textbf{VHDL} for Digital Logic Design, \textbf{MATLAB} for Signal Analysis, \textbf{Embedded C}, Electronics, Circuit Theory.}
-          \vspace{1.0mm}
           \resumeItem{Extracurricular:}
-          {Treasurer for the \textbf{IEEE} uOttawa Student Branch, Treasurer for \textbf{Women in Engineering uOttawa}, uOttawa \textbf{AI Club} Contributor.}
+          {Treasurer for \textbf{IEEE} uOttawa Student Branch and \textbf{Women in Engineering} uOttawa.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 \vspace{-8mm}
@@ -177,11 +177,9 @@
       {Larus Technologies}{January 2024 - Present}
       \vspace{1mm}
       \resumeItemListStart
-    \item {Developed a \textbf{Machine Learning Orchestration Web App} for an \textbf{AI text classification} project with dashboards and integrated \textbf{Kubeflow pipeline} triggers, for real-time monitoring and management. These features supported the parallel training of 25 models and were used by a team of 10 data scientists and annotators, optimizing efficiency.}
+    \item {Developed a \textbf{Machine Learning Orchestration Web App} with real-time \textbf{dashboards} and \textbf{Kubeflow pipeline triggers}, enabling parallel training of \textbf{25 models} and supporting a team of \textbf{10 data scientists and annotators}.}
     \vspace{1mm}
-    \item {Designed a data \textbf{annotation} page, incorporating features like keyword highlighting, filtering, metric tracking, and comments. This increased annotation speed to an average of \textbf{300 per hour}, improving productivity and data quality.}
-    \vspace{1mm}
-    \item {Improved annotation accuracy and \textbf{model performance} by implementing feature allowing the \textbf{test set} to be reviewed by knowledgeable users, resulting in a \textbf{15\% reduction in annotation errors}. This process enhanced the reliability of model metrics during active training, ensuring more accurate and representative performance evaluations.}
+    \item {Designed a data \textbf{annotation} page with keyword highlighting, filtering, metric tracking, and comments, increasing annotation speed to \textbf{300 per hour} and improving productivity and data quality.}
     \vspace{1mm}
     \item {Technologies Used: \textbf{Google BigQuery, Python, Streamlit, Pandas, SQL, Kubeflow}}
     \vspace{1mm}
@@ -195,16 +193,52 @@
       \vspace{1mm}
       \resumeItemListStart
     \item {Ameliorated team’s \textbf{Spark} framework monitoring by sending logs to \textbf{Azure Eventhub}. Connected logs to the \textbf{ELK stack} and used \textbf{Kibana} to display a dashboard resulting in improved monitoring of system health.}
-    \vspace{1mm}
-    \item {Enhanced data comprehension by designing a script for recursive traversal of a \textbf{Spark schema}, automatically populating 40\% of metadata fields resulting in increased interpretability for analysts.}
     \resumeItemListEnd
   \resumeSubHeadingListEnd
 \vspace{-8mm}
 
 %-----------PROJECTS-----------------
-\section{\textbf{Personal Projects}}
+\section{\textbf{Projects}}
 \resumeSubHeadingListStart
 \resumeProject
+      {Edge AI Drone Object Detection and Mapping System} %Project Name
+      {Drone-based object detection system with real-time GPS mapping for park rangers.} %Project Name, Location Name
+      {} %Event Dates
+
+      \resumeItemListStart
+        \item {Benchmarked \textbf{edge AI} inference on \textbf{Hailo 8L accelerator} using \textbf{YOLOv8s}, increasing detection accuracy by \textbf{tiling} 4K video into 640x640 segments, improving \textbf{small-object detection} performance by over \textbf{250\%}.}
+         \vspace{1.0mm}
+         \item {Integrated \textbf{UART} and \textbf{SPI communication} between Raspberry Pi 5, \textbf{Quectel L76K GPS}, and \textbf{SX1262 LoRa transceiver} to transmit precise, real-time telemetry data upon object detection, enabling instant location updates in the mapping application.}
+         \vspace{1.0mm}
+         \item {Source Code: \href{https://github.com/FreddyyAndrews/TAILS-Embedded}{\faGithub\ github.com/FreddyyAndrews/TAILS-Embedded}}
+    \resumeItemListEnd 
+    \vspace{-1.5mm}
+    \resumeProject
+      {Pipelined RISC Processor with Hazard Detection} %Project Name
+      {A structurally implemented, pipelined RISC processor with full hazard detection capabilities.} %Project Name, Location Name
+      {} %Event Dates
+
+      \resumeItemListStart
+        \item {Designed and verified \textbf{gate-level} hardware implementation in \textbf{VHDL}, supporting \textbf{arithmetic} operations, \textbf{branching}, unconditional jumps, and \textbf{memory load/store} instructions.}
+         \vspace{1.0mm}
+        \item {Created a \textbf{hazard detection} unit from scratch, effectively handling \textbf{data and control hazards} to maintain pipeline efficiency and instruction correctness.}
+
+    \resumeItemListEnd 
+    \vspace{-1.5mm}
+    \resumeProject
+      {Realtime Debuggable Traffic Light Control System with UART Interface} %Project Name
+      {An FPGA-based traffic management system with real-time UART debugging capability.} %Project Name, Location Name
+      {} %Event Dates
+
+      \resumeItemListStart
+        \item{Implemented a \textbf{state machine} in \textbf{VHDL} at the gate-level to simulate traffic conditions triggered by physical switch inputs representing vehicle presence.}
+        \vspace{1mm}
+        \item{Developed a \textbf{UART receiver/transmitter} interface with a \textbf{baud rate of 9600}, enabling real-time logging and debugging via terminal connection. Synthesized the design on a \textbf{Cyclone IV DE2-115 FPGA} board.}
+        \vspace{1mm}
+        \item {Source Code: \href{https://github.com/FreddyyAndrews/Traffic-Light-Control-System-With-UART}{\faGithub\ github.com/FreddyyAndrews/Traffic-Light-Control-System-With-UART}}
+    \resumeItemListEnd
+    \vspace{-1.5mm}
+    \resumeProject
       {FreddyyBot Chess Engine} %Project Name
       {A chess engine designed from scratch in C++} %Project Name, Location Name
       {} %Event Dates
@@ -212,35 +246,9 @@
       \resumeItemListStart
         \item {Developed a custom move generation system with efficient board evaluation, enabling high-speed \textbf{position tree traversal} of over \textbf{300,000 nodes per second}. }
          \vspace{1.0mm}
-         \item {Self-Hosted the engine on a \textbf{Raspberry Pi 5} and integrated it with the \textbf{Lichess Bot API}, enabling 24/7 automatic competitive matchmaking and achieving an \textbf{Elo of 1900} in the bullet time variant.}
-         \vspace{1.0mm}
         \item {Source Code: \href{https://github.com/FreddyyAndrews/FreddyyBot}{\faGithub\ github.com/FreddyyAndrews/FreddyyBot}}
-        \item {Challenge the bot: \href{https://lichess.org/@/FreddyyBot}{\faChessKnight\ lichess.org/@/FreddyyBot}}
-    \resumeItemListEnd 
-
-    \vspace{-1.5mm}
-
-    \resumeProject
-      {Sweatris | uOttaHack 7 Challenge Winner and 3rd Place Overall Project} %Project Name
-      {An interactive Tetris game controlled by webcam designed to get you moving.  } %Project Name, Location Name
-      {} %Event Dates
-
-      \resumeItemListStart
-        \item{Utilized \textbf{OpenCV} and \textbf{YOLO object detection} to determine the player's location on the screen, allowing player movement to be converted to game controls at 15 FPS, resulting in a responsive game experience.}
-        \vspace{1mm}
-        \item {Source Code: \href{https://github.com/bravesirrobin358/Sweatris}{\faGithub\ github.com/bravesirrobin358/Sweatris}}
-    \resumeItemListEnd
-    \vspace{-1.5mm}
-    \resumeProject
-      {NBA MVP Predictor} %Project Name
-      {A Linear Regression Model to Predict NBA MVPs.} %Project Name, Location Name
-      {} %Event Dates
-
-      \resumeItemListStart
-        \item {Developed a \textbf{Scikit-learn Linear Regression} model to predict NBA MVP vote shares, achieving correct predictions for \textbf{12 out of 13} MVPs from 2010-2023, with an $\mathbf{R^2}$ \textbf{score of 0.56}, by leveraging season statistics as features. \textbf{Correctly predicted} Nikola Jokic as \textbf{2024 NBA MVP}.}
-         \vspace{1.0mm}
-        \item {Source Code: \href{https://github.com/FreddyyAndrews/NBA-MVP-Predictor}{\faGithub\ github.com/FreddyyAndrews/NBA-MVP-Predictor}}
-
+        \vspace{1.0mm}
+        \item {LiChess Profile: \href{https://lichess.org/@/FreddyyBot}{\faChessKnight\ lichess.org/@/FreddyyBot}}
     \resumeItemListEnd 
   \resumeSubHeadingListEnd
 \vspace{-8mm}
@@ -249,11 +257,11 @@
 \section{\textbf{Technical Skills}}
  \begin{itemize}[leftmargin=0.05in, label={}]
     \small{
-    \item{\textbf{Programming Languages:} Python, Java, C++, VHDL, Bash, SQL.}
+    \item{\textbf{Programming Languages:} C++, Python, Java, VHDL, Bash, SQL.}
     \vspace{-2mm}
     \item{\textbf{Certifications:} Azure AI Fundamentals.}
     \vspace{-2mm}
-    \item{\textbf{Technologies:} Google Cloud Platform, Azure, Kubeflow, Scikit-learn, Matplotlib, Pandas, Gemini API, OpenAI API.}
+    \item{\textbf{Technologies:} Altera FPGA, Quartus, OpenCV, Google Cloud Platform, Azure, Kubeflow, Scikit-learn, Pandas.}
     }
 \end{itemize}
  \vspace{-16pt}
